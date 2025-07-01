@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srirama dhesigan - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <button id="theme-toggle">🌗 Toggle Theme</button>
+
+
+  <img src="myimg.png" 
+     alt=" sriram image" 
+     class="profile-img pulse" 
+     id="profilePic" />
+
+
+<!-- Modal (click to enlarge image) -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage" />
+</div>
+
+
+  <header class="fade-in">
+    <h1>Hi, I'm Srirama dhesigan</h1>
+    <p>Student | Web Developer | Gamer</p>
+  </header>
+
+  <section id="about" class="fade-in delay">
+    <h2>About Me</h2>
+    <p>I'm currently pursuing a B.Tech in Information Technology while exploring 3D art , game development and web development as a passion. As a beginner in Blender and an aspiring indie game developer, I’m working on a few personal projects that combine code and creativity.</p>
+  </section>
+
+   <section id="education" class="fade-in delay2">
+  <h2>Education</h2>
+  <ul class="edu-list">
+    <li>
+      <strong>Bachelor of Technology in Information Technology</strong><br />
+      Mailam engineering College, Villupuram<br />
+      2025 – Present
+    </li>
+  </ul>
+</section>
+
+  <section id="projects" class="fade-in delay2">
+    <h2>Projects</h2>
+ <div class="project-card">
+  <h3>Jump & Run Endless</h3>
+  <p>An infinite side-scrolling runner featuring procedural obstacle generation to keep gameplay fresh and unpredictable. Designed for mobile and PC with dynamic level scaling.</p>
+  <ul>
+    <li>🎲 Procedural obstacle generation</li>
+    <li>🏃‍♂️ Player physics and responsive controls using Rigidbody2D</li>
+    <li>🏆 Scoring system and animated UI for real-time feedback</li>
+    <li>🛠️ Built with Unity, C#, and Particle Systems for visual effects</li>
+  </ul>
+  <a href="https://github.com/yourusername/jump-run-endless" class="button" target="_blank">🔗 View Project on GitHub</a>
+</div>
+  </section>
+
+<section id="gamedev" class="fade-in delay3">
+  <h2>Game Dev & 3D Art</h2>
+  <p>I’ve been learning Blender and experimenting with indie game design in my free time. While nothing’s released yet, I love exploring game mechanics, level design, and creating 3D assets.</p>
+  <p>Stay tuned—something cool is in the works!</p>
+</section>
+
+
+
+
+
+
+
+
+<section id="skills" class="fade-in delay2">
+  <h2>Skills & Tools</h2>
+  <ul class="skill-list">
+    <li>💻 HTML, CSS, JavaScript</li>
+    <li>🐍 Python (Basics)</li>
+    <li>☕ Java (Basics)</li>
+    <li>🎮 Game Design (Beginner), Blender</li>
+    <li>🛠️ Git, VS Code</li>
+    <li>✍️ Story Writing & Narrative Design</li>
+  </ul>
+</section>
+
+<section class="fade-in delay3">
+  <h2>Learning in Progress</h2>
+  <p>Currently exploring low-poly modeling in Blender and basics of Unity for game development. Also diving into JavaScript DOM projects and creative writing for interactive storytelling!</p>
+</section>
+<section class="fade-in delay3">
+  <h2>Just For Fun 😄</h2>
+  <ul>
+    <li>🎧 I love listening to game soundtracks while coding</li>
+    <li>🎮 Passionate about puzzle-platformers and story-driven games</li>
+    <li>📖 Writing fantasy & sci-fi micro-stories is my creative escape</li>
+  </ul>
+</section>
+
+<section id="certificates" class="fade-in delay3">
+  <h2>🏅 Certificates</h2>
+  <ul class="cert-list">
+    <li>
+      <strong>Frontend Development - HTML, CSS & JS</strong><br />
+      <a href="yourPDFs/FrontendCertificate.pdf" download class="button">⬇️ View Certificate</a>
+    </li>
+    <li>
+      <strong>Python Basics – Programming Essentials</strong><br />
+      <a href="Python (2).pdf" download class="button">⬇️ View Certificate</a>
+    </li>
+    <li>
+      <strong>Game Development in Unity</strong><br />
+      <a href="game.pdf" download class="button">⬇️ View Certificate</a>
+    </li>
+  </ul>
+</section>
+
+
+<section id="resume" class="fade-in delay3">
+  <h2>📄 Download My Resume</h2>
+  <a href="yourPDFs/MyResume.pdf" download class="button">⬇️ Download Resume</a>
+</section>
+
+
+
+
+
+  <section id="contact" class="fade-in delay3">
+  <h2>Connect with Me</h2>
+  <div class="contact-icons">
+    <a href="https://www.linkedin.com/in/srirama-dhesigan-7490b5291" target="_blank" title="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/Sriramadhesigan" target="_blank" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    </a>
+    <a href="mailto:sriramadhesigan2005@email.com" title="Email">
+      <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" />
+    </a>
+    <a href="tel:91+9894510956" title="Phone">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" />
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <footer>
+    <p>© 2025 sriram. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    const body = document.body;
+    btn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      body.classList.toggle('light');
+    });
+  </script>
+
+  <script>
+  const profile = document.getElementById("profilePic");
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const close = document.querySelector(".close");
+
+  profile.onclick = () => {
+    modal.style.display = "block";
+    modalImg.src = profile.src;
+  };
+
+  close.onclick = () => (modal.style.display = "none");
+
+  window.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  };
+</script>
+
+</body>
+</html>
